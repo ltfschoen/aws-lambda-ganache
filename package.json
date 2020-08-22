@@ -1,0 +1,20 @@
+{
+  "name": "aws-lambda-ganache",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Luke Schoen <ltfschoen@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "10.x",
+    "yarn": "1.x"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/register": "^7.10.5",
+    "@truffle/hdwallet-provider": "^1.0.42",
+    "child_process": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "truffle-contract": "^4.0.31",
+    "web3": "^1.2.11"
+  }
+}

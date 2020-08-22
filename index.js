@@ -1,13 +1,4 @@
-// const AWSXRay = require('aws-xray-sdk-core');
-// const AWS = AWSXRay.captureAWS(require('aws-sdk'));
-// const fs = require('fs').promises;
-// const crypto = require('crypto');
-// const dir = process.env.mountPath;
-
 const { execute } = require('../helpers/execute');
-
-// // Create client outside of handler to reuse
-// const lambda = new AWS.Lambda();
 
 /**
  * AWS Lambda Function example that logs the values of environment
@@ -38,9 +29,8 @@ const setupGanache = async function() {
   execute(`. ./scripts/setup-contract.sh`);
 
   return true;
-  // return lambda.getAccountSettings().promise()
 }
 
 const serialize = function(object) {
-  return JSON.stringify(object, null, 2)
+  return JSON.stringify(object, null, 2);
 }
